@@ -50,11 +50,6 @@ for result in results:
     # remove unwanted characters
     sales = sales.strip('*').strip('†').replace(',','')
 
-    # print('Company is', companyname)
-    # # Company is WonderblyPersonalised children's books          
-    # print('Sales', sales)   
-    # # Sales *25,860
-
     # go to link and extract company website
     url = data[1].find('a').get('href')
     page = urllib.request.urlopen(url)
